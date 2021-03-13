@@ -1,21 +1,8 @@
-import json
-import os
+from code_generater.file_process import read_json
+from code_generater.file_process import read_templates
+
 # debug
 import tools
-
-
-def read_json(json_dir, json_name):
-    json_path = os.path.join(json_dir, json_name)
-    with open(json_path, 'r') as json_file:
-        config = json.load(json_file)
-    return config
-
-
-def read_templates(template_dir, template_name='model.template'):
-    template_path = os.path.join(template_dir, template_name)
-    with open(template_path, mode='r') as template_file:
-        template = template_file.readlines()
-    return template
 
 
 def generator(indexs: dict, template: list, config: dict):
