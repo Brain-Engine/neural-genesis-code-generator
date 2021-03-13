@@ -1,0 +1,11 @@
+{
+  "model.template": {
+    "Name": 4,
+    "Init": 5,
+    "Super": 6,
+    "Attribute": 7,
+    "Input": 10,
+    "Forward": 11,
+    "Output": 12
+  }
+}

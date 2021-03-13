@@ -1,0 +1,22 @@
+{
+  "MyModel": {
+    "Path": "./demo/model.py",
+    "Name": ["MyModel"],
+    "Init": ["in_channel, out_channel"],
+    "Super": ["ModelName"],
+    "Attribute": ["self.conv = nn.Conv2d(in_channel, out_channel, (3, 3))"],
+    "Input": ["x"],
+    "Forward": ["x = x"],
+    "Output": ["x"]
+  },
+  "block": {
+    "Path": "./demo/block.py",
+    "Name": ["block"],
+    "Init": ["in_channel, out_channel"],
+    "Super": ["ModelName"],
+    "Attribute": ["self.conv = nn.Conv2d(in_channel, out_channel, (3, 3))"],
+    "Input": ["x"],
+    "Forward": ["x = x"],
+    "Output": ["x"]
+  }
+}
