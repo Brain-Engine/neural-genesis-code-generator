@@ -48,7 +48,8 @@ def get_attr_info_dict(attr, replace_param_self=False):
             try:
                 init_func = sub_attr.__init__
             except:
-                print("init error")
+                # print("[Waring]when getting init function! An attr without init function ")
+                pass
 
             info = inspect.getfullargspec(init_func)
 
@@ -56,14 +57,14 @@ def get_attr_info_dict(attr, replace_param_self=False):
                 params = info.args
                 params = list(params)
             except:
-                print("args error")
+                # print("args error")
                 params = []
 
             try:
                 params_default_value = info.defaults
                 params_default_value = list(params_default_value)
             except:
-                print("defaults error")
+                # print("defaults error")
                 params_default_value = []
 
             if replace_param_self:
