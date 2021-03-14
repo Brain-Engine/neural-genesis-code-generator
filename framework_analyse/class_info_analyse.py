@@ -46,16 +46,19 @@ def get_attr_info_dict(attr, replace_param_self=False):
                 sub_attr = attr.__dict__[name]
                 init_func = sub_attr.__init__
                 inspect.signature(init_func)
-                # print(init_func)
+
                 params = init_func.__code__.co_varnames
-                print(params)
-                # print(param)
+                params_default_value = init_func.__defaults__
+
                 params = list(params)
+                params_default_value = list(params_default_value)
+
                 if replace_param_self:
                     params[0] = name
                 attr_info["params"] = params
+                attr_info["params_default_value"] = params_default_value
 
-                attr_info_dict[name]=attr_info
+                attr_info_dict[name] = attr_info
             except:
                 pass
     return attr_info_dict
