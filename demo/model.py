@@ -11,3 +11,8 @@ class MyModel(nn.Module):
     def forward(x):
         x = x
         return x
+
+
+
+torch.nn.Conv2d()
+torch.nn.Linear()
