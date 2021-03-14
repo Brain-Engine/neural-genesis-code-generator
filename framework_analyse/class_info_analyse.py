@@ -41,24 +41,36 @@ def get_attr_info_dict(attr, replace_param_self=False):
     attr_info_dict = {}
     for name in attr.__dict__:
         if not str(name).islower():
+
+            attr_info = {}
+            sub_attr = attr.__dict__[name]
+
             try:
-                attr_info = {}
-                sub_attr = attr.__dict__[name]
                 init_func = sub_attr.__init__
-                info = inspect.getfullargspec(init_func)
-
-                params = info.args
-                params_default_value = info.defaults
-
-                params = list(params)
-                params_default_value = list(params_default_value)
-
-                if replace_param_self:
-                    params[0] = name
-                attr_info["params"] = params
-                attr_info["params_default_value"] = params_default_value
-
-                attr_info_dict[name]=attr_info
             except:
-                pass
+                print("init error")
+
+            info = inspect.getfullargspec(init_func)
+
+            try:
+                params = info.args
+                params = list(params)
+            except:
+                print("args error")
+                params = []
+
+            try:
+                params_default_value = info.defaults
+                params_default_value = list(params_default_value)
+            except:
+                print("defaults error")
+                params_default_value = []
+
+            if replace_param_self:
+                params[0] = name
+            attr_info["params"] = params
+            attr_info["params_default_value"] = params_default_value
+
+            attr_info_dict[name] = attr_info
+
     return attr_info_dict
