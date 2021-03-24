@@ -3,12 +3,13 @@ from tools import save_as_json
 
 node_list, edge_dict = analyse("zdemo/20210319112759.json")
 
+# print(edge_dict)
 attr_dict, attr_list = attribute(node_list)
 
 forward_list, output_id = forward_analyse(attr_dict, edge_dict)
 
-print(forward_list)
-print(output_id)
+# print(forward_list)
+# print(output_id)
 
 template = {
     "MyModel": {
@@ -25,4 +26,4 @@ template = {
 
 
 json_data = save_as_json(template, "./templates/pytorch/demo/config.json")
-print(json_data)
+# print(json_data)

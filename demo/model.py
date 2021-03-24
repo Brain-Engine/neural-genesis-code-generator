@@ -26,4 +26,5 @@ class MyModel(nn.Module):
         g71 = self.AdaptiveAvgPool2d_g71(g42)
         g43 = self.ReLU_g43(g71)
         g89 = self.Flatten_g89(g43)
-        return g89
+        g83 = self.Linear_g83(g89)
+        return g83

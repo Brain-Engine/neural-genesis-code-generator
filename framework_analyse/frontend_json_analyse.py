@@ -61,6 +61,9 @@ def forward_analyse(attr_dict: dict, edge_dict: dict):
         forward_list.append(f"{output_id} = {attr_dict[output_id]['name']}({input_id})")
         input_id = output_id
 
+    output_id = edge_dict[input_id]
+    forward_list.append(f"{output_id} = {attr_dict[output_id]['name']}({input_id})")
+    print(forward_list)
     return forward_list, output_id
 
 
