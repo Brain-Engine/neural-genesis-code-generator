@@ -27,7 +27,17 @@ def generator(indexs: dict, template: list, config: dict):
     >>>tools.list_printer(template)
     """
     for name in indexs:
-        template[indexs[name]] = template[indexs[name]].format(*config[name])
+        print(name)
+        # print(*config[name])
+        # for i in config[name]:
+        #     print(i)
+        if name in ['Attribute', 'Forward']:
+            template[indexs[name]] = template[indexs[name]].format("\n        ".join(config[name]))
+        elif name in []:
+            template[indexs[name]] = template[indexs[name]].format(", ".join(config[name]))
+        else:
+            template[indexs[name]] = template[indexs[name]].format(*config[name])
+
 
     return template
 

@@ -1,1 +1,3872 @@
-{"Module": [], "Identity": [{"name": "args", "default_value": null, "required": false, "type": "Any"}, {"name": "**kwargs", "default_value": null, "required": false, "type": "Any"}], "Linear": [{"name": "in_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "out_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}], "Conv1d": [{"name": "in_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "Conv2d": [{"name": "in_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "Conv3d": [{"name": "in_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "ConvTranspose1d": [{"name": "in_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "output_padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "ConvTranspose2d": [{"name": "in_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "output_padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "dilation", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "ConvTranspose3d": [{"name": "in_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "output_padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "Threshold": [{"name": "threshold", "default_value": null, "required": true, "type": "<class 'float'>"}, {"name": "value", "default_value": null, "required": true, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "ReLU": [{"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "Hardtanh": [{"name": "min_val", "default_value": -1.0, "required": false, "type": "<class 'float'>"}, {"name": "max_val", "default_value": 1.0, "required": false, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "min_value", "default_value": null, "required": false, "type": "typing.Union[float, NoneType]"}, {"name": "max_value", "default_value": null, "required": false, "type": "typing.Union[float, NoneType]"}], "ReLU6": [{"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "Sigmoid": [], "Tanh": [], "Softmax": [{"name": "dim", "default_value": null, "required": false, "type": "typing.Union[int, NoneType]"}], "Softmax2d": [], "LogSoftmax": [{"name": "dim", "default_value": null, "required": false, "type": "typing.Union[int, NoneType]"}], "ELU": [{"name": "alpha", "default_value": 1.0, "required": false, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "SELU": [{"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "CELU": [{"name": "alpha", "default_value": 1.0, "required": false, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "GLU": [{"name": "dim", "default_value": -1, "required": false, "type": "<class 'int'>"}], "GELU": [], "Hardshrink": [{"name": "lambd", "default_value": 0.5, "required": false, "type": "<class 'float'>"}], "LeakyReLU": [{"name": "negative_slope", "default_value": 0.01, "required": false, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "LogSigmoid": [], "Softplus": [{"name": "beta", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "threshold", "default_value": 20, "required": false, "type": "<class 'int'>"}], "Softshrink": [{"name": "lambd", "default_value": 0.5, "required": false, "type": "<class 'float'>"}], "MultiheadAttention": [{"name": "embed_dim", "default_value": null, "required": true, "type": "Any"}, {"name": "num_heads", "default_value": null, "required": true, "type": "Any"}, {"name": "dropout", "default_value": 0.0, "required": false, "type": "Any"}, {"name": "bias", "default_value": true, "required": false, "type": "Any"}, {"name": "add_bias_kv", "default_value": false, "required": false, "type": "Any"}, {"name": "add_zero_attn", "default_value": false, "required": false, "type": "Any"}, {"name": "kdim", "default_value": null, "required": false, "type": "Any"}, {"name": "vdim", "default_value": null, "required": false, "type": "Any"}], "PReLU": [{"name": "num_parameters", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "init", "default_value": 0.25, "required": false, "type": "<class 'float'>"}], "Softsign": [], "Softmin": [{"name": "dim", "default_value": null, "required": false, "type": "typing.Union[int, NoneType]"}], "Tanhshrink": [], "RReLU": [{"name": "lower", "default_value": 0.125, "required": false, "type": "<class 'float'>"}, {"name": "upper", "default_value": 0.3333333333333333, "required": false, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "L1Loss": [{"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "NLLLoss": [{"name": "weight", "default_value": null, "required": false, "type": "typing.Union[torch.Tensor, NoneType]"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "ignore_index", "default_value": -100, "required": false, "type": "<class 'int'>"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "KLDivLoss": [{"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}, {"name": "log_target", "default_value": false, "required": false, "type": "<class 'bool'>"}], "MSELoss": [{"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "BCELoss": [{"name": "weight", "default_value": null, "required": false, "type": "typing.Union[torch.Tensor, NoneType]"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "BCEWithLogitsLoss": [{"name": "weight", "default_value": null, "required": false, "type": "typing.Union[torch.Tensor, NoneType]"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}, {"name": "pos_weight", "default_value": null, "required": false, "type": "typing.Union[torch.Tensor, NoneType]"}], "NLLLoss2d": [{"name": "weight", "default_value": null, "required": false, "type": "typing.Union[torch.Tensor, NoneType]"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "ignore_index", "default_value": -100, "required": false, "type": "<class 'int'>"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "PoissonNLLLoss": [{"name": "log_input", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "full", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "eps", "default_value": 1e-08, "required": false, "type": "<class 'float'>"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "CosineEmbeddingLoss": [{"name": "margin", "default_value": 0.0, "required": false, "type": "<class 'float'>"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "CTCLoss": [{"name": "blank", "default_value": 0, "required": false, "type": "<class 'int'>"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}, {"name": "zero_infinity", "default_value": false, "required": false, "type": "<class 'bool'>"}], "HingeEmbeddingLoss": [{"name": "margin", "default_value": 1.0, "required": false, "type": "<class 'float'>"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "MarginRankingLoss": [{"name": "margin", "default_value": 0.0, "required": false, "type": "<class 'float'>"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "MultiLabelMarginLoss": [{"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "MultiLabelSoftMarginLoss": [{"name": "weight", "default_value": null, "required": false, "type": "typing.Union[torch.Tensor, NoneType]"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "MultiMarginLoss": [{"name": "p", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "margin", "default_value": 1.0, "required": false, "type": "<class 'float'>"}, {"name": "weight", "default_value": null, "required": false, "type": "typing.Union[torch.Tensor, NoneType]"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "SmoothL1Loss": [{"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}, {"name": "beta", "default_value": 1.0, "required": false, "type": "<class 'float'>"}], "GaussianNLLLoss": [{"name": "full", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "eps", "default_value": 1e-06, "required": false, "type": "<class 'float'>"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "SoftMarginLoss": [{"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "CrossEntropyLoss": [{"name": "weight", "default_value": null, "required": false, "type": "typing.Union[torch.Tensor, NoneType]"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "ignore_index", "default_value": -100, "required": false, "type": "<class 'int'>"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "Container": [{"name": "**kwargs", "default_value": null, "required": false, "type": "Any"}], "Sequential": [{"name": "args", "default_value": null, "required": false, "type": "Any"}], "ModuleList": [{"name": "modules", "default_value": null, "required": false, "type": "typing.Union[typing.Iterable[torch.nn.modules.module.Module], NoneType]"}], "ModuleDict": [{"name": "modules", "default_value": null, "required": false, "type": "typing.Union[typing.Mapping[str, torch.nn.modules.module.Module], NoneType]"}], "ParameterList": [{"name": "parameters", "default_value": null, "required": false, "type": "typing.Union[typing.Iterable[ForwardRef('Parameter')], NoneType]"}], "ParameterDict": [{"name": "parameters", "default_value": null, "required": false, "type": "typing.Union[typing.Mapping[str, ForwardRef('Parameter')], NoneType]"}], "AvgPool1d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "ceil_mode", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "count_include_pad", "default_value": true, "required": false, "type": "<class 'bool'>"}], "AvgPool2d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int], NoneType]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "ceil_mode", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "count_include_pad", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "divisor_override", "default_value": null, "required": false, "type": "typing.Union[int, NoneType]"}], "AvgPool3d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int], NoneType]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "ceil_mode", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "count_include_pad", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "divisor_override", "default_value": null, "required": false, "type": "typing.Union[int, NoneType]"}], "MaxPool1d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "return_indices", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "ceil_mode", "default_value": false, "required": false, "type": "<class 'bool'>"}], "MaxPool2d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "return_indices", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "ceil_mode", "default_value": false, "required": false, "type": "<class 'bool'>"}], "MaxPool3d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "return_indices", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "ceil_mode", "default_value": false, "required": false, "type": "<class 'bool'>"}], "MaxUnpool1d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int], NoneType]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}], "MaxUnpool2d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int], NoneType]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}], "MaxUnpool3d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int], NoneType]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}], "FractionalMaxPool2d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "output_size", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int], NoneType]"}, {"name": "output_ratio", "default_value": null, "required": false, "type": "typing.Union[float, typing.Tuple[float, float], NoneType]"}, {"name": "return_indices", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "_random_samples", "default_value": null, "required": false, "type": "Any"}], "FractionalMaxPool3d": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "output_size", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int], NoneType]"}, {"name": "output_ratio", "default_value": null, "required": false, "type": "typing.Union[float, typing.Tuple[float, float, float], NoneType]"}, {"name": "return_indices", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "_random_samples", "default_value": null, "required": false, "type": "Any"}], "LPPool1d": [{"name": "norm_type", "default_value": null, "required": true, "type": "<class 'float'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"}, {"name": "ceil_mode", "default_value": false, "required": false, "type": "<class 'bool'>"}], "LPPool2d": [{"name": "norm_type", "default_value": null, "required": true, "type": "<class 'float'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "stride", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"}, {"name": "ceil_mode", "default_value": false, "required": false, "type": "<class 'bool'>"}], "LocalResponseNorm": [{"name": "size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "alpha", "default_value": 0.0001, "required": false, "type": "<class 'float'>"}, {"name": "beta", "default_value": 0.75, "required": false, "type": "<class 'float'>"}, {"name": "k", "default_value": 1.0, "required": false, "type": "<class 'float'>"}], "BatchNorm1d": [{"name": "num_features", "default_value": null, "required": true, "type": "Any"}, {"name": "eps", "default_value": 1e-05, "required": false, "type": "Any"}, {"name": "momentum", "default_value": 0.1, "required": false, "type": "Any"}, {"name": "affine", "default_value": true, "required": false, "type": "Any"}, {"name": "track_running_stats", "default_value": true, "required": false, "type": "Any"}], "BatchNorm2d": [{"name": "num_features", "default_value": null, "required": true, "type": "Any"}, {"name": "eps", "default_value": 1e-05, "required": false, "type": "Any"}, {"name": "momentum", "default_value": 0.1, "required": false, "type": "Any"}, {"name": "affine", "default_value": true, "required": false, "type": "Any"}, {"name": "track_running_stats", "default_value": true, "required": false, "type": "Any"}], "BatchNorm3d": [{"name": "num_features", "default_value": null, "required": true, "type": "Any"}, {"name": "eps", "default_value": 1e-05, "required": false, "type": "Any"}, {"name": "momentum", "default_value": 0.1, "required": false, "type": "Any"}, {"name": "affine", "default_value": true, "required": false, "type": "Any"}, {"name": "track_running_stats", "default_value": true, "required": false, "type": "Any"}], "InstanceNorm1d": [{"name": "num_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "eps", "default_value": 1e-05, "required": false, "type": "<class 'float'>"}, {"name": "momentum", "default_value": 0.1, "required": false, "type": "<class 'float'>"}, {"name": "affine", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "track_running_stats", "default_value": false, "required": false, "type": "<class 'bool'>"}], "InstanceNorm2d": [{"name": "num_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "eps", "default_value": 1e-05, "required": false, "type": "<class 'float'>"}, {"name": "momentum", "default_value": 0.1, "required": false, "type": "<class 'float'>"}, {"name": "affine", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "track_running_stats", "default_value": false, "required": false, "type": "<class 'bool'>"}], "InstanceNorm3d": [{"name": "num_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "eps", "default_value": 1e-05, "required": false, "type": "<class 'float'>"}, {"name": "momentum", "default_value": 0.1, "required": false, "type": "<class 'float'>"}, {"name": "affine", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "track_running_stats", "default_value": false, "required": false, "type": "<class 'bool'>"}], "LayerNorm": [{"name": "normalized_shape", "default_value": null, "required": true, "type": "typing.Union[int, typing.List[int], torch.Size]"}, {"name": "eps", "default_value": 1e-05, "required": false, "type": "<class 'float'>"}, {"name": "elementwise_affine", "default_value": true, "required": false, "type": "<class 'bool'>"}], "GroupNorm": [{"name": "num_groups", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "num_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "eps", "default_value": 1e-05, "required": false, "type": "<class 'float'>"}, {"name": "affine", "default_value": true, "required": false, "type": "<class 'bool'>"}], "SyncBatchNorm": [{"name": "num_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "eps", "default_value": 1e-05, "required": false, "type": "<class 'float'>"}, {"name": "momentum", "default_value": 0.1, "required": false, "type": "<class 'float'>"}, {"name": "affine", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "track_running_stats", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "process_group", "default_value": null, "required": false, "type": "typing.Union[typing.Any, NoneType]"}], "Dropout": [{"name": "p", "default_value": 0.5, "required": false, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "Dropout2d": [{"name": "p", "default_value": 0.5, "required": false, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "Dropout3d": [{"name": "p", "default_value": 0.5, "required": false, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "AlphaDropout": [{"name": "p", "default_value": 0.5, "required": false, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "FeatureAlphaDropout": [{"name": "p", "default_value": 0.5, "required": false, "type": "<class 'float'>"}, {"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "ReflectionPad1d": [{"name": "padding", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}], "ReflectionPad2d": [{"name": "padding", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int, int]]"}], "ReplicationPad2d": [{"name": "padding", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int, int]]"}], "ReplicationPad1d": [{"name": "padding", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}], "ReplicationPad3d": [{"name": "padding", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int, int, int, int]]"}], "CrossMapLRN2d": [{"name": "size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "alpha", "default_value": 0.0001, "required": false, "type": "<class 'float'>"}, {"name": "beta", "default_value": 0.75, "required": false, "type": "<class 'float'>"}, {"name": "k", "default_value": 1, "required": false, "type": "<class 'float'>"}], "Embedding": [{"name": "num_embeddings", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "embedding_dim", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "padding_idx", "default_value": null, "required": false, "type": "typing.Union[int, NoneType]"}, {"name": "max_norm", "default_value": null, "required": false, "type": "typing.Union[float, NoneType]"}, {"name": "norm_type", "default_value": 2.0, "required": false, "type": "<class 'float'>"}, {"name": "scale_grad_by_freq", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "sparse", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "_weight", "default_value": null, "required": false, "type": "typing.Union[torch.Tensor, NoneType]"}], "EmbeddingBag": [{"name": "num_embeddings", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "embedding_dim", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "max_norm", "default_value": null, "required": false, "type": "typing.Union[float, NoneType]"}, {"name": "norm_type", "default_value": 2.0, "required": false, "type": "<class 'float'>"}, {"name": "scale_grad_by_freq", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "mode", "default_value": "mean", "required": false, "type": "<class 'str'>"}, {"name": "sparse", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "_weight", "default_value": null, "required": false, "type": "typing.Union[torch.Tensor, NoneType]"}, {"name": "include_last_offset", "default_value": false, "required": false, "type": "<class 'bool'>"}], "RNNBase": [{"name": "mode", "default_value": null, "required": true, "type": "<class 'str'>"}, {"name": "input_size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "hidden_size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "num_layers", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "batch_first", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "dropout", "default_value": 0.0, "required": false, "type": "<class 'float'>"}, {"name": "bidirectional", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "proj_size", "default_value": 0, "required": false, "type": "<class 'int'>"}], "RNN": [{"name": "args", "default_value": null, "required": false, "type": "Any"}, {"name": "**kwargs", "default_value": null, "required": false, "type": "Any"}], "LSTM": [{"name": "args", "default_value": null, "required": false, "type": "Any"}, {"name": "**kwargs", "default_value": null, "required": false, "type": "Any"}], "GRU": [{"name": "args", "default_value": null, "required": false, "type": "Any"}, {"name": "**kwargs", "default_value": null, "required": false, "type": "Any"}], "RNNCellBase": [{"name": "input_size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "hidden_size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "bias", "default_value": null, "required": true, "type": "<class 'bool'>"}, {"name": "num_chunks", "default_value": null, "required": false, "type": "<class 'int'>"}], "RNNCell": [{"name": "input_size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "hidden_size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "nonlinearity", "default_value": "tanh", "required": false, "type": "<class 'str'>"}], "LSTMCell": [{"name": "input_size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "hidden_size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}], "GRUCell": [{"name": "input_size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "hidden_size", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}], "PixelShuffle": [{"name": "upscale_factor", "default_value": null, "required": false, "type": "<class 'int'>"}], "PixelUnshuffle": [{"name": "downscale_factor", "default_value": null, "required": false, "type": "<class 'int'>"}], "Upsample": [{"name": "size", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"}, {"name": "scale_factor", "default_value": null, "required": false, "type": "typing.Union[float, typing.Tuple[float, ...], NoneType]"}, {"name": "mode", "default_value": "nearest", "required": false, "type": "<class 'str'>"}, {"name": "align_corners", "default_value": null, "required": false, "type": "typing.Union[bool, NoneType]"}], "UpsamplingNearest2d": [{"name": "size", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int], NoneType]"}, {"name": "scale_factor", "default_value": null, "required": false, "type": "typing.Union[float, typing.Tuple[float, float], NoneType]"}], "UpsamplingBilinear2d": [{"name": "size", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int], NoneType]"}, {"name": "scale_factor", "default_value": null, "required": false, "type": "typing.Union[float, typing.Tuple[float, float], NoneType]"}], "PairwiseDistance": [{"name": "p", "default_value": 2.0, "required": false, "type": "<class 'float'>"}, {"name": "eps", "default_value": 1e-06, "required": false, "type": "<class 'float'>"}, {"name": "keepdim", "default_value": false, "required": false, "type": "<class 'bool'>"}], "AdaptiveMaxPool1d": [{"name": "output_size", "default_value": null, "required": true, "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"}, {"name": "return_indices", "default_value": false, "required": false, "type": "<class 'bool'>"}], "AdaptiveMaxPool2d": [{"name": "output_size", "default_value": null, "required": true, "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"}, {"name": "return_indices", "default_value": false, "required": false, "type": "<class 'bool'>"}], "AdaptiveMaxPool3d": [{"name": "output_size", "default_value": null, "required": true, "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"}, {"name": "return_indices", "default_value": false, "required": false, "type": "<class 'bool'>"}], "AdaptiveAvgPool1d": [{"name": "output_size", "default_value": null, "required": false, "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"}], "AdaptiveAvgPool2d": [{"name": "output_size", "default_value": null, "required": false, "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"}], "AdaptiveAvgPool3d": [{"name": "output_size", "default_value": null, "required": false, "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"}], "TripletMarginLoss": [{"name": "margin", "default_value": 1.0, "required": false, "type": "<class 'float'>"}, {"name": "p", "default_value": 2.0, "required": false, "type": "<class 'float'>"}, {"name": "eps", "default_value": 1e-06, "required": false, "type": "<class 'float'>"}, {"name": "swap", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "size_average", "default_value": null, "required": false, "type": "Any"}, {"name": "reduce", "default_value": null, "required": false, "type": "Any"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "ZeroPad2d": [{"name": "padding", "default_value": null, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int, int]]"}], "ConstantPad1d": [{"name": "padding", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "value", "default_value": null, "required": false, "type": "<class 'float'>"}], "ConstantPad2d": [{"name": "padding", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int, int, int]]"}, {"name": "value", "default_value": null, "required": false, "type": "<class 'float'>"}], "ConstantPad3d": [{"name": "padding", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int, int, int, int, int]]"}, {"name": "value", "default_value": null, "required": false, "type": "<class 'float'>"}], "Bilinear": [{"name": "in1_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "in2_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "out_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}], "CosineSimilarity": [{"name": "dim", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "eps", "default_value": 1e-08, "required": false, "type": "<class 'float'>"}], "Unfold": [{"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}], "Fold": [{"name": "output_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, ...]]"}], "AdaptiveLogSoftmaxWithLoss": [{"name": "in_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "n_classes", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "cutoffs", "default_value": null, "required": true, "type": "typing.Sequence[int]"}, {"name": "div_value", "default_value": 4.0, "required": false, "type": "<class 'float'>"}, {"name": "head_bias", "default_value": false, "required": false, "type": "<class 'bool'>"}], "TransformerEncoder": [{"name": "encoder_layer", "default_value": null, "required": true, "type": "Any"}, {"name": "num_layers", "default_value": null, "required": true, "type": "Any"}, {"name": "norm", "default_value": null, "required": false, "type": "Any"}], "TransformerDecoder": [{"name": "decoder_layer", "default_value": null, "required": true, "type": "Any"}, {"name": "num_layers", "default_value": null, "required": true, "type": "Any"}, {"name": "norm", "default_value": null, "required": false, "type": "Any"}], "TransformerEncoderLayer": [{"name": "d_model", "default_value": null, "required": true, "type": "Any"}, {"name": "nhead", "default_value": null, "required": true, "type": "Any"}, {"name": "dim_feedforward", "default_value": 2048, "required": false, "type": "Any"}, {"name": "dropout", "default_value": 0.1, "required": false, "type": "Any"}, {"name": "activation", "default_value": "relu", "required": false, "type": "Any"}], "TransformerDecoderLayer": [{"name": "d_model", "default_value": null, "required": true, "type": "Any"}, {"name": "nhead", "default_value": null, "required": true, "type": "Any"}, {"name": "dim_feedforward", "default_value": 2048, "required": false, "type": "Any"}, {"name": "dropout", "default_value": 0.1, "required": false, "type": "Any"}, {"name": "activation", "default_value": "relu", "required": false, "type": "Any"}], "Transformer": [{"name": "d_model", "default_value": 512, "required": false, "type": "<class 'int'>"}, {"name": "nhead", "default_value": 8, "required": false, "type": "<class 'int'>"}, {"name": "num_encoder_layers", "default_value": 6, "required": false, "type": "<class 'int'>"}, {"name": "num_decoder_layers", "default_value": 6, "required": false, "type": "<class 'int'>"}, {"name": "dim_feedforward", "default_value": 2048, "required": false, "type": "<class 'int'>"}, {"name": "dropout", "default_value": 0.1, "required": false, "type": "<class 'float'>"}, {"name": "activation", "default_value": "relu", "required": false, "type": "<class 'str'>"}, {"name": "custom_encoder", "default_value": null, "required": false, "type": "typing.Union[typing.Any, NoneType]"}, {"name": "custom_decoder", "default_value": null, "required": false, "type": "typing.Union[typing.Any, NoneType]"}], "LazyLinear": [{"name": "out_features", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}], "LazyConv1d": [{"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "LazyConv2d": [{"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "LazyConv3d": [{"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "LazyConvTranspose1d": [{"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "output_padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int]]"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "LazyConvTranspose2d": [{"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "output_padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "dilation", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "LazyConvTranspose3d": [{"name": "out_channels", "default_value": null, "required": true, "type": "<class 'int'>"}, {"name": "kernel_size", "default_value": null, "required": true, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "stride", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "output_padding", "default_value": 0, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "groups", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "bias", "default_value": true, "required": false, "type": "<class 'bool'>"}, {"name": "dilation", "default_value": 1, "required": false, "type": "typing.Union[int, typing.Tuple[int, int, int]]"}, {"name": "padding_mode", "default_value": "zeros", "required": false, "type": "<class 'str'>"}], "Flatten": [{"name": "start_dim", "default_value": 1, "required": false, "type": "<class 'int'>"}, {"name": "end_dim", "default_value": -1, "required": false, "type": "<class 'int'>"}], "Unflatten": [{"name": "dim", "default_value": null, "required": true, "type": "typing.Union[int, str]"}, {"name": "unflattened_size", "default_value": null, "required": false, "type": "typing.Union[torch.Size, typing.List[int], typing.Tuple[int, ...], typing.Tuple[typing.Tuple[str, int]]]"}], "Hardsigmoid": [{"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "Hardswish": [{"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "SiLU": [{"name": "inplace", "default_value": false, "required": false, "type": "<class 'bool'>"}], "TripletMarginWithDistanceLoss": [{"name": "distance_function", "default_value": null, "required": false, "type": "typing.Union[typing.Callable[[torch.Tensor, torch.Tensor], torch.Tensor], NoneType]"}, {"name": "margin", "default_value": 1.0, "required": false, "type": "<class 'float'>"}, {"name": "swap", "default_value": false, "required": false, "type": "<class 'bool'>"}, {"name": "reduction", "default_value": "mean", "required": false, "type": "<class 'str'>"}], "ChannelShuffle": [{"name": "groups", "default_value": null, "required": false, "type": "Any"}], "Parameter": [{"name": "args", "default_value": null, "required": false, "type": "Any"}, {"name": "**kwargs", "default_value": null, "required": false, "type": "Any"}], "UninitializedParameter": [{"name": "args", "default_value": null, "required": false, "type": "Any"}, {"name": "**kwargs", "default_value": null, "required": false, "type": "Any"}], "DataParallel": [{"name": "module", "default_value": null, "required": true, "type": "Any"}, {"name": "device_ids", "default_value": null, "required": false, "type": "Any"}, {"name": "output_device", "default_value": null, "required": false, "type": "Any"}, {"name": "dim", "default_value": 0, "required": false, "type": "Any"}]}
+{
+  "Module": [],
+  "Identity": [
+    {
+      "name": "args",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "**kwargs",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "Linear": [
+    {
+      "name": "in_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "out_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "Conv1d": [
+    {
+      "name": "in_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "Conv2d": [
+    {
+      "name": "in_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "Conv3d": [
+    {
+      "name": "in_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "ConvTranspose1d": [
+    {
+      "name": "in_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "output_padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "ConvTranspose2d": [
+    {
+      "name": "in_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "output_padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "ConvTranspose3d": [
+    {
+      "name": "in_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "output_padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "Threshold": [
+    {
+      "name": "threshold",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "float"
+    },
+    {
+      "name": "value",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "ReLU": [
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "Hardtanh": [
+    {
+      "name": "min_val",
+      "default_value": -1.0,
+      "value": -1.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "max_val",
+      "default_value": 1.0,
+      "value": 1.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "min_value",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[float, NoneType]"
+    },
+    {
+      "name": "max_value",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[float, NoneType]"
+    }
+  ],
+  "ReLU6": [
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "Sigmoid": [],
+  "Tanh": [],
+  "Softmax": [
+    {
+      "name": "dim",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, NoneType]"
+    }
+  ],
+  "Softmax2d": [],
+  "LogSoftmax": [
+    {
+      "name": "dim",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, NoneType]"
+    }
+  ],
+  "ELU": [
+    {
+      "name": "alpha",
+      "default_value": 1.0,
+      "value": 1.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "SELU": [
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "CELU": [
+    {
+      "name": "alpha",
+      "default_value": 1.0,
+      "value": 1.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "GLU": [
+    {
+      "name": "dim",
+      "default_value": -1,
+      "value": -1,
+      "required": false,
+      "type": "int"
+    }
+  ],
+  "GELU": [],
+  "Hardshrink": [
+    {
+      "name": "lambd",
+      "default_value": 0.5,
+      "value": 0.5,
+      "required": false,
+      "type": "float"
+    }
+  ],
+  "LeakyReLU": [
+    {
+      "name": "negative_slope",
+      "default_value": 0.01,
+      "value": 0.01,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "LogSigmoid": [],
+  "Softplus": [
+    {
+      "name": "beta",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "threshold",
+      "default_value": 20,
+      "value": 20,
+      "required": false,
+      "type": "int"
+    }
+  ],
+  "Softshrink": [
+    {
+      "name": "lambd",
+      "default_value": 0.5,
+      "value": 0.5,
+      "required": false,
+      "type": "float"
+    }
+  ],
+  "MultiheadAttention": [
+    {
+      "name": "embed_dim",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "num_heads",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "dropout",
+      "default_value": 0.0,
+      "value": 0.0,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "add_bias_kv",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "add_zero_attn",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "kdim",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "vdim",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "PReLU": [
+    {
+      "name": "num_parameters",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "init",
+      "default_value": 0.25,
+      "value": 0.25,
+      "required": false,
+      "type": "float"
+    }
+  ],
+  "Softsign": [],
+  "Softmin": [
+    {
+      "name": "dim",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, NoneType]"
+    }
+  ],
+  "Tanhshrink": [],
+  "RReLU": [
+    {
+      "name": "lower",
+      "default_value": 0.125,
+      "value": 0.125,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "upper",
+      "default_value": 0.3333333333333333,
+      "value": 0.3333333333333333,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "L1Loss": [
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "NLLLoss": [
+    {
+      "name": "weight",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Tensor, NoneType]"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "ignore_index",
+      "default_value": -100,
+      "value": -100,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "KLDivLoss": [
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    },
+    {
+      "name": "log_target",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "MSELoss": [
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "BCELoss": [
+    {
+      "name": "weight",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Tensor, NoneType]"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "BCEWithLogitsLoss": [
+    {
+      "name": "weight",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Tensor, NoneType]"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    },
+    {
+      "name": "pos_weight",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Tensor, NoneType]"
+    }
+  ],
+  "NLLLoss2d": [
+    {
+      "name": "weight",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Tensor, NoneType]"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "ignore_index",
+      "default_value": -100,
+      "value": -100,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "PoissonNLLLoss": [
+    {
+      "name": "log_input",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "full",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-08,
+      "value": 1e-08,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "CosineEmbeddingLoss": [
+    {
+      "name": "margin",
+      "default_value": 0.0,
+      "value": 0.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "CTCLoss": [
+    {
+      "name": "blank",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    },
+    {
+      "name": "zero_infinity",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "HingeEmbeddingLoss": [
+    {
+      "name": "margin",
+      "default_value": 1.0,
+      "value": 1.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "MarginRankingLoss": [
+    {
+      "name": "margin",
+      "default_value": 0.0,
+      "value": 0.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "MultiLabelMarginLoss": [
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "MultiLabelSoftMarginLoss": [
+    {
+      "name": "weight",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Tensor, NoneType]"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "MultiMarginLoss": [
+    {
+      "name": "p",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "margin",
+      "default_value": 1.0,
+      "value": 1.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "weight",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Tensor, NoneType]"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "SmoothL1Loss": [
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    },
+    {
+      "name": "beta",
+      "default_value": 1.0,
+      "value": 1.0,
+      "required": false,
+      "type": "float"
+    }
+  ],
+  "GaussianNLLLoss": [
+    {
+      "name": "full",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-06,
+      "value": 1e-06,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "SoftMarginLoss": [
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "CrossEntropyLoss": [
+    {
+      "name": "weight",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Tensor, NoneType]"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "ignore_index",
+      "default_value": -100,
+      "value": -100,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "Container": [
+    {
+      "name": "**kwargs",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "Sequential": [
+    {
+      "name": "args",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "ModuleList": [
+    {
+      "name": "modules",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[typing.Iterable[torch.nn.modules.module.Module], NoneType]"
+    }
+  ],
+  "ModuleDict": [
+    {
+      "name": "modules",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[typing.Mapping[str, torch.nn.modules.module.Module], NoneType]"
+    }
+  ],
+  "ParameterList": [
+    {
+      "name": "parameters",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[typing.Iterable[ForwardRef('Parameter')], NoneType]"
+    }
+  ],
+  "ParameterDict": [
+    {
+      "name": "parameters",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[typing.Mapping[str, ForwardRef('Parameter')], NoneType]"
+    }
+  ],
+  "AvgPool1d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "ceil_mode",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "count_include_pad",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "AvgPool2d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int], NoneType]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "ceil_mode",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "count_include_pad",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "divisor_override",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, NoneType]"
+    }
+  ],
+  "AvgPool3d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int], NoneType]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "ceil_mode",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "count_include_pad",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "divisor_override",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, NoneType]"
+    }
+  ],
+  "MaxPool1d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "return_indices",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "ceil_mode",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "MaxPool2d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "return_indices",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "ceil_mode",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "MaxPool3d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "return_indices",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "ceil_mode",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "MaxUnpool1d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int], NoneType]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    }
+  ],
+  "MaxUnpool2d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int], NoneType]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    }
+  ],
+  "MaxUnpool3d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int], NoneType]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    }
+  ],
+  "FractionalMaxPool2d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "output_size",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int], NoneType]"
+    },
+    {
+      "name": "output_ratio",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[float, typing.Tuple[float, float], NoneType]"
+    },
+    {
+      "name": "return_indices",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "_random_samples",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "FractionalMaxPool3d": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "output_size",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int], NoneType]"
+    },
+    {
+      "name": "output_ratio",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[float, typing.Tuple[float, float, float], NoneType]"
+    },
+    {
+      "name": "return_indices",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "_random_samples",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "LPPool1d": [
+    {
+      "name": "norm_type",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "float"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"
+    },
+    {
+      "name": "ceil_mode",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "LPPool2d": [
+    {
+      "name": "norm_type",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "float"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "stride",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"
+    },
+    {
+      "name": "ceil_mode",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "LocalResponseNorm": [
+    {
+      "name": "size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "alpha",
+      "default_value": 0.0001,
+      "value": 0.0001,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "beta",
+      "default_value": 0.75,
+      "value": 0.75,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "k",
+      "default_value": 1.0,
+      "value": 1.0,
+      "required": false,
+      "type": "float"
+    }
+  ],
+  "BatchNorm1d": [
+    {
+      "name": "num_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-05,
+      "value": 1e-05,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "momentum",
+      "default_value": 0.1,
+      "value": 0.1,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "affine",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "track_running_stats",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "BatchNorm2d": [
+    {
+      "name": "num_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-05,
+      "value": 1e-05,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "momentum",
+      "default_value": 0.1,
+      "value": 0.1,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "affine",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "track_running_stats",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "BatchNorm3d": [
+    {
+      "name": "num_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-05,
+      "value": 1e-05,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "momentum",
+      "default_value": 0.1,
+      "value": 0.1,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "affine",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "track_running_stats",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "InstanceNorm1d": [
+    {
+      "name": "num_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-05,
+      "value": 1e-05,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "momentum",
+      "default_value": 0.1,
+      "value": 0.1,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "affine",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "track_running_stats",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "InstanceNorm2d": [
+    {
+      "name": "num_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-05,
+      "value": 1e-05,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "momentum",
+      "default_value": 0.1,
+      "value": 0.1,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "affine",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "track_running_stats",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "InstanceNorm3d": [
+    {
+      "name": "num_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-05,
+      "value": 1e-05,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "momentum",
+      "default_value": 0.1,
+      "value": 0.1,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "affine",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "track_running_stats",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "LayerNorm": [
+    {
+      "name": "normalized_shape",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.List[int], torch.Size]"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-05,
+      "value": 1e-05,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "elementwise_affine",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "GroupNorm": [
+    {
+      "name": "num_groups",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "num_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-05,
+      "value": 1e-05,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "affine",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "SyncBatchNorm": [
+    {
+      "name": "num_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-05,
+      "value": 1e-05,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "momentum",
+      "default_value": 0.1,
+      "value": 0.1,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "affine",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "track_running_stats",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "process_group",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[typing.Any, NoneType]"
+    }
+  ],
+  "Dropout": [
+    {
+      "name": "p",
+      "default_value": 0.5,
+      "value": 0.5,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "Dropout2d": [
+    {
+      "name": "p",
+      "default_value": 0.5,
+      "value": 0.5,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "Dropout3d": [
+    {
+      "name": "p",
+      "default_value": 0.5,
+      "value": 0.5,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "AlphaDropout": [
+    {
+      "name": "p",
+      "default_value": 0.5,
+      "value": 0.5,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "FeatureAlphaDropout": [
+    {
+      "name": "p",
+      "default_value": 0.5,
+      "value": 0.5,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "ReflectionPad1d": [
+    {
+      "name": "padding",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    }
+  ],
+  "ReflectionPad2d": [
+    {
+      "name": "padding",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int, int]]"
+    }
+  ],
+  "ReplicationPad2d": [
+    {
+      "name": "padding",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int, int]]"
+    }
+  ],
+  "ReplicationPad1d": [
+    {
+      "name": "padding",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    }
+  ],
+  "ReplicationPad3d": [
+    {
+      "name": "padding",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int, int, int, int]]"
+    }
+  ],
+  "CrossMapLRN2d": [
+    {
+      "name": "size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "alpha",
+      "default_value": 0.0001,
+      "value": 0.0001,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "beta",
+      "default_value": 0.75,
+      "value": 0.75,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "k",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "float"
+    }
+  ],
+  "Embedding": [
+    {
+      "name": "num_embeddings",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "embedding_dim",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "padding_idx",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, NoneType]"
+    },
+    {
+      "name": "max_norm",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[float, NoneType]"
+    },
+    {
+      "name": "norm_type",
+      "default_value": 2.0,
+      "value": 2.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "scale_grad_by_freq",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "sparse",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "_weight",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Tensor, NoneType]"
+    }
+  ],
+  "EmbeddingBag": [
+    {
+      "name": "num_embeddings",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "embedding_dim",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "max_norm",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[float, NoneType]"
+    },
+    {
+      "name": "norm_type",
+      "default_value": 2.0,
+      "value": 2.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "scale_grad_by_freq",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "mode",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    },
+    {
+      "name": "sparse",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "_weight",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Tensor, NoneType]"
+    },
+    {
+      "name": "include_last_offset",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "RNNBase": [
+    {
+      "name": "mode",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "str"
+    },
+    {
+      "name": "input_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "hidden_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "num_layers",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "batch_first",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "dropout",
+      "default_value": 0.0,
+      "value": 0.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "bidirectional",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "proj_size",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "int"
+    }
+  ],
+  "RNN": [
+    {
+      "name": "args",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "**kwargs",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "LSTM": [
+    {
+      "name": "args",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "**kwargs",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "GRU": [
+    {
+      "name": "args",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "**kwargs",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "RNNCellBase": [
+    {
+      "name": "input_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "hidden_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "bool"
+    },
+    {
+      "name": "num_chunks",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "int"
+    }
+  ],
+  "RNNCell": [
+    {
+      "name": "input_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "hidden_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "nonlinearity",
+      "default_value": "tanh",
+      "value": "tanh",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "LSTMCell": [
+    {
+      "name": "input_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "hidden_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "GRUCell": [
+    {
+      "name": "input_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "hidden_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "PixelShuffle": [
+    {
+      "name": "upscale_factor",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "int"
+    }
+  ],
+  "PixelUnshuffle": [
+    {
+      "name": "downscale_factor",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "int"
+    }
+  ],
+  "Upsample": [
+    {
+      "name": "size",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...], NoneType]"
+    },
+    {
+      "name": "scale_factor",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[float, typing.Tuple[float, ...], NoneType]"
+    },
+    {
+      "name": "mode",
+      "default_value": "nearest",
+      "value": "nearest",
+      "required": false,
+      "type": "str"
+    },
+    {
+      "name": "align_corners",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[bool, NoneType]"
+    }
+  ],
+  "UpsamplingNearest2d": [
+    {
+      "name": "size",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int], NoneType]"
+    },
+    {
+      "name": "scale_factor",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[float, typing.Tuple[float, float], NoneType]"
+    }
+  ],
+  "UpsamplingBilinear2d": [
+    {
+      "name": "size",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int], NoneType]"
+    },
+    {
+      "name": "scale_factor",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[float, typing.Tuple[float, float], NoneType]"
+    }
+  ],
+  "PairwiseDistance": [
+    {
+      "name": "p",
+      "default_value": 2.0,
+      "value": 2.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-06,
+      "value": 1e-06,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "keepdim",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "AdaptiveMaxPool1d": [
+    {
+      "name": "output_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"
+    },
+    {
+      "name": "return_indices",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "AdaptiveMaxPool2d": [
+    {
+      "name": "output_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"
+    },
+    {
+      "name": "return_indices",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "AdaptiveMaxPool3d": [
+    {
+      "name": "output_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"
+    },
+    {
+      "name": "return_indices",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "AdaptiveAvgPool1d": [
+    {
+      "name": "output_size",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"
+    }
+  ],
+  "AdaptiveAvgPool2d": [
+    {
+      "name": "output_size",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"
+    }
+  ],
+  "AdaptiveAvgPool3d": [
+    {
+      "name": "output_size",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, NoneType, typing.Tuple[typing.Union[int, NoneType], ...]]"
+    }
+  ],
+  "TripletMarginLoss": [
+    {
+      "name": "margin",
+      "default_value": 1.0,
+      "value": 1.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "p",
+      "default_value": 2.0,
+      "value": 2.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-06,
+      "value": 1e-06,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "swap",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "size_average",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduce",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "ZeroPad2d": [
+    {
+      "name": "padding",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int, int]]"
+    }
+  ],
+  "ConstantPad1d": [
+    {
+      "name": "padding",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "value",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "float"
+    }
+  ],
+  "ConstantPad2d": [
+    {
+      "name": "padding",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int, int, int]]"
+    },
+    {
+      "name": "value",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "float"
+    }
+  ],
+  "ConstantPad3d": [
+    {
+      "name": "padding",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int, int, int, int, int]]"
+    },
+    {
+      "name": "value",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "float"
+    }
+  ],
+  "Bilinear": [
+    {
+      "name": "in1_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "in2_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "out_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "CosineSimilarity": [
+    {
+      "name": "dim",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "eps",
+      "default_value": 1e-08,
+      "value": 1e-08,
+      "required": false,
+      "type": "float"
+    }
+  ],
+  "Unfold": [
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    }
+  ],
+  "Fold": [
+    {
+      "name": "output_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, ...]]"
+    }
+  ],
+  "AdaptiveLogSoftmaxWithLoss": [
+    {
+      "name": "in_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "n_classes",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "cutoffs",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Sequence[int]"
+    },
+    {
+      "name": "div_value",
+      "default_value": 4.0,
+      "value": 4.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "head_bias",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "TransformerEncoder": [
+    {
+      "name": "encoder_layer",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "num_layers",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "norm",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "TransformerDecoder": [
+    {
+      "name": "decoder_layer",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "num_layers",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "norm",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "TransformerEncoderLayer": [
+    {
+      "name": "d_model",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "nhead",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "dim_feedforward",
+      "default_value": 2048,
+      "value": 2048,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "dropout",
+      "default_value": 0.1,
+      "value": 0.1,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "activation",
+      "default_value": "relu",
+      "value": "relu",
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "TransformerDecoderLayer": [
+    {
+      "name": "d_model",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "nhead",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "dim_feedforward",
+      "default_value": 2048,
+      "value": 2048,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "dropout",
+      "default_value": 0.1,
+      "value": 0.1,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "activation",
+      "default_value": "relu",
+      "value": "relu",
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "Transformer": [
+    {
+      "name": "d_model",
+      "default_value": 512,
+      "value": 512,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "nhead",
+      "default_value": 8,
+      "value": 8,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "num_encoder_layers",
+      "default_value": 6,
+      "value": 6,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "num_decoder_layers",
+      "default_value": 6,
+      "value": 6,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "dim_feedforward",
+      "default_value": 2048,
+      "value": 2048,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "dropout",
+      "default_value": 0.1,
+      "value": 0.1,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "activation",
+      "default_value": "relu",
+      "value": "relu",
+      "required": false,
+      "type": "str"
+    },
+    {
+      "name": "custom_encoder",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[typing.Any, NoneType]"
+    },
+    {
+      "name": "custom_decoder",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[typing.Any, NoneType]"
+    }
+  ],
+  "LazyLinear": [
+    {
+      "name": "out_features",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "LazyConv1d": [
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "LazyConv2d": [
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "LazyConv3d": [
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "LazyConvTranspose1d": [
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "output_padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int]]"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "LazyConvTranspose2d": [
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "output_padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "LazyConvTranspose3d": [
+    {
+      "name": "out_channels",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "int"
+    },
+    {
+      "name": "kernel_size",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "stride",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "output_padding",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "groups",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "bias",
+      "default_value": "True",
+      "value": "True",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "dilation",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "typing.Union[int, typing.Tuple[int, int, int]]"
+    },
+    {
+      "name": "padding_mode",
+      "default_value": "zeros",
+      "value": "zeros",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "Flatten": [
+    {
+      "name": "start_dim",
+      "default_value": 1,
+      "value": 1,
+      "required": false,
+      "type": "int"
+    },
+    {
+      "name": "end_dim",
+      "default_value": -1,
+      "value": -1,
+      "required": false,
+      "type": "int"
+    }
+  ],
+  "Unflatten": [
+    {
+      "name": "dim",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "typing.Union[int, str]"
+    },
+    {
+      "name": "unflattened_size",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[torch.Size, typing.List[int], typing.Tuple[int, ...], typing.Tuple[typing.Tuple[str, int]]]"
+    }
+  ],
+  "Hardsigmoid": [
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "Hardswish": [
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "SiLU": [
+    {
+      "name": "inplace",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    }
+  ],
+  "TripletMarginWithDistanceLoss": [
+    {
+      "name": "distance_function",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "typing.Union[typing.Callable[[torch.Tensor, torch.Tensor], torch.Tensor], NoneType]"
+    },
+    {
+      "name": "margin",
+      "default_value": 1.0,
+      "value": 1.0,
+      "required": false,
+      "type": "float"
+    },
+    {
+      "name": "swap",
+      "default_value": "False",
+      "value": "False",
+      "required": false,
+      "type": "bool"
+    },
+    {
+      "name": "reduction",
+      "default_value": "mean",
+      "value": "mean",
+      "required": false,
+      "type": "str"
+    }
+  ],
+  "ChannelShuffle": [
+    {
+      "name": "groups",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "Parameter": [
+    {
+      "name": "args",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "**kwargs",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "UninitializedParameter": [
+    {
+      "name": "args",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "**kwargs",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    }
+  ],
+  "DataParallel": [
+    {
+      "name": "module",
+      "default_value": null,
+      "value": null,
+      "required": true,
+      "type": "Any"
+    },
+    {
+      "name": "device_ids",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "output_device",
+      "default_value": null,
+      "value": null,
+      "required": false,
+      "type": "Any"
+    },
+    {
+      "name": "dim",
+      "default_value": 0,
+      "value": 0,
+      "required": false,
+      "type": "Any"
+    }
+  ]
+}

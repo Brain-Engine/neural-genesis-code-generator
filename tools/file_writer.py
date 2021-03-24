@@ -9,5 +9,5 @@ def list_writer(file_path, data_list, use_abs_path=True):
     file_dir = os.path.dirname(file_path)
     os.makedirs(file_dir, exist_ok=True)
     print(file_dir)
-    with open(file_path, 'w+') as f:
+    with open(file_path, 'w') as f:
         f.writelines(data_list)

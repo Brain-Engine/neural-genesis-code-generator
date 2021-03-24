@@ -1,4 +1,5 @@
 import inspect
+import re
 
 
 def get_attr_name(attr):
@@ -108,6 +109,35 @@ def get_annotations(func_info, delete_return=True):
     return params_type
 
 
+def parse_nested(text, *, left=r'[(]', right=r'[)]', sep=r','):
+    """ https://stackoverflow.com/a/17141899/190597 (falsetru)"""
+    pat = r'({}|{}|{})'.format(left, right, sep)
+    tokens = re.split(pat, text)
+    stack = [[]]
+    for x in tokens:
+        if not x or re.match(sep, x):
+            continue
+        if re.match(left, x):
+            # Nest a new list inside the current list
+            current = []
+            stack[-1].append(current)
+            stack.append(current)
+        elif re.match(right, x):
+            stack.pop()
+            if not stack:
+                raise ValueError('error: opening bracket is missing')
+        else:
+            stack[-1].append(x)
+    if len(stack) > 1:
+        print(stack)
+        raise ValueError('error: closing bracket is missing')
+    return stack.pop()
+
+
+def process_param_type(type_str):
+    return re.sub(r"<class '(.+?)'>", r"\1", type_str)
+
+
 def resolve_info(force_args_and_defaults,
                  force_kwonlyargs_and_kwonlydefaults,
                  varargs_varkw_exists,
@@ -138,7 +168,15 @@ def resolve_info(force_args_and_defaults,
 
     if to_dict:
         for index, param in enumerate(info):
-            info[index] = {"name": param[0], "default_value": param[1], "required": param[2], "type": param[3]}
+            if isinstance(param[1], bool):  # 处理前端数据绑定时不接受bool问题
+                param[1] = str(param[1])
+            info[index] = {
+                "name": param[0],
+                "default_value": param[1],
+                "value": param[1],  # 用户实际输入值
+                "required": param[2],
+                "type": process_param_type(param[3])
+            }
             dict(info[index])
 
     # print(info)
