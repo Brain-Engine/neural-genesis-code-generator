@@ -45,8 +45,8 @@ def attribute(node_list: list):
             param_string += f"{param}={params[param]}, "
 
         attr_string = f"self.{node['name']}_{node['id']} = nn.{node['name']}({param_string[:-2]})"
-        attr_dict[node['id']]={"name": f"self.{node['name']}_{node['id']}",
-                          "attribute": attr_string}
+        attr_dict[node['id']] = {"name": f"self.{node['name']}_{node['id']}",
+                                 "attribute": attr_string}
         attr_list.append(attr_string)
 
     return attr_dict, attr_list
@@ -55,7 +55,7 @@ def attribute(node_list: list):
 def forward_analyse(attr_dict: dict, edge_dict: dict):
     input_id = 'x'
     output_id = 'x'
-    forward_list=[]
+    forward_list = []
     for source in edge_dict:
         output_id = source
         forward_list.append(f"{output_id} = {attr_dict[output_id]['name']}({input_id})")
@@ -65,12 +65,3 @@ def forward_analyse(attr_dict: dict, edge_dict: dict):
     forward_list.append(f"{output_id} = {attr_dict[output_id]['name']}({input_id})")
     print(forward_list)
     return forward_list, output_id
-
-
-'''
-x
-a b
-b c
-c d
-
-'''

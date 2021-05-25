@@ -2,43 +2,40 @@
   "MyModel": {
     "Path": "./demo/model.py",
     "Name": [
-      "MyModel"
+      "Model"
     ],
     "Init": [
       " "
     ],
     "Super": [
-      "MyModel"
+      "Model"
     ],
     "Attribute": [
-      "self.Conv2d_g34 = nn.Conv2d(in_channels=3, out_channels=16, kernel_size=3)",
-      "self.BatchNorm2d_g37 = nn.BatchNorm2d(num_features=16)",
-      "self.ReLU_g38 = nn.ReLU(inplace=True)",
-      "self.Conv2d_g41 = nn.Conv2d(in_channels=16, out_channels=32, kernel_size=3, padding=0)",
-      "self.BatchNorm2d_g42 = nn.BatchNorm2d(num_features=32)",
-      "self.ReLU_g43 = nn.ReLU(inplace=True)",
-      "self.MaxPool2d_g53 = nn.MaxPool2d(kernel_size=2)",
-      "self.AdaptiveAvgPool2d_g71 = nn.AdaptiveAvgPool2d(output_size=1)",
-      "self.Linear_g83 = nn.Linear(in_features=32, out_features=10)",
-      "self.Flatten_g89 = nn.Flatten()"
+      "self.Conv2d_g8 = nn.Conv2d(in_channels=1, out_channels=16, kernel_size=3, stride=2, padding=1)",
+      "self.Conv2d_g10 = nn.Conv2d(in_channels=16, out_channels=32, kernel_size=1, stride=1)",
+      "self.Conv2d_g12 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, stride=2, padding=1)",
+      "self.Conv2d_g14 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=1, stride=1)",
+      "self.AdaptiveAvgPool2d_g19 = nn.AdaptiveAvgPool2d(output_size=1)",
+      "self.Flatten_g22 = nn.Flatten(start_dim=1)",
+      "self.Linear_g25 = nn.Linear(in_features=128, out_features=10)"
     ],
     "Input": [
       "x"
     ],
     "Forward": [
-      "g34 = self.Conv2d_g34(x)",
-      "g37 = self.BatchNorm2d_g37(g34)",
-      "g38 = self.ReLU_g38(g37)",
-      "g53 = self.MaxPool2d_g53(g38)",
-      "g41 = self.Conv2d_g41(g53)",
-      "g42 = self.BatchNorm2d_g42(g41)",
-      "g71 = self.AdaptiveAvgPool2d_g71(g42)",
-      "g43 = self.ReLU_g43(g71)",
-      "g89 = self.Flatten_g89(g43)",
-      "g83 = self.Linear_g83(g89)"
+      "g8 = self.Conv2d_g8(x)",
+      "g10 = self.Conv2d_g10(g8)",
+      "g12 = self.Conv2d_g12(g10)",
+      "g14 = self.Conv2d_g14(g12)",
+      "g19 = self.AdaptiveAvgPool2d_g19(g14)",
+      "g22 = self.Flatten_g22(g19)",
+      "g25 = self.Linear_g25(g22)"
     ],
     "Output": [
-      "g83"
+      "g25"
+    ],
+    "Function": [
+      "my_model"
     ]
   }
 }
