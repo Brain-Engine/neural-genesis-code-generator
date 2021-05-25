@@ -12,5 +12,5 @@ class {}(nn.Module):
         return {}
 
 
-def my_model():
+def my_model(**kwargs):
     return {}()

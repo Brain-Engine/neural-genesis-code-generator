@@ -11,5 +11,5 @@ if __name__ == '__main__':
     info_dict = get_attr_init_dict(neural_genesis.nn)
     # end = time.time_ns()
     end = time.time()
-    save_as_json(info_dict, './function_attr.json')
+    save_as_json(info_dict, './torchModel.json')
     print(end-start)

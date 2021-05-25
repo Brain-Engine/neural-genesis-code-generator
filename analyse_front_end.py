@@ -5,7 +5,7 @@ from tools import save_as_json
 
 start = time.time()
 # node_list, edge_dict = analyse("zdemo/20210319112759.json")
-node_list, edge_dict = analyse("zdemo/20210525151754.json")
+node_list, edge_dict = analyse("zdemo/20210525170638.json")
 
 # print(edge_dict)
 attr_dict, attr_list = attribute(node_list)
