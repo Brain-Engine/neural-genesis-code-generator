@@ -38,7 +38,6 @@ def generator(indexs: dict, template: list, config: dict):
         else:
             template[indexs[name]] = template[indexs[name]].format(*config[name])
 
-
     return template
 
 

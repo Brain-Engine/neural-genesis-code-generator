@@ -6,6 +6,7 @@
     "Attribute": 7,
     "Input": 9,
     "Forward": 10,
-    "Output": 11
+    "Output": 11,
+    "Function": 15
   }
 }

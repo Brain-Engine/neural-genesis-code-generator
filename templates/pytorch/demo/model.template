@@ -1,5 +1,5 @@
 import torch
-from torch import nn
+from neural_genesis import nn
 
 
 class {}(nn.Module):
@@ -10,3 +10,7 @@ class {}(nn.Module):
     def forward(self, {}):
         {}
         return {}
+
+
+def my_model(**kwargs):
+    return {}()
