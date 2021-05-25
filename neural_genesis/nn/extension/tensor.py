@@ -58,18 +58,13 @@ class UnSqueeze(nn.Module):
 
 
 class Flatten(nn.Module):
-    def __init__(self, start_dim: int, end_dim: int):
+    def __init__(self, start_dim: int, end_dim: int = -1):
         super(Flatten, self).__init__()
         self.start_dim = start_dim
         self.end_dim = end_dim
 
     def forward(self, x):
-        return x.view(*x.shape[:self.start_dim], -1, *x.shape[self.end_dim+1:])
-
-
-# if __name__ == '__main__':
-#     inp = torch.ones((1, 3, 224, 224))
-#     model = Flatten(1, -1)
-#     out = model(inp)
-#     print(out.shape)
-#     print(inp[])
+        if self.end_dim == -1:
+            return x.view(*x.shape[:self.start_dim], -1)
+        else:
+            return x.view(*x.shape[:self.start_dim], -1, *x.shape[self.end_dim+1:])

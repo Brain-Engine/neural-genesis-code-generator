@@ -23,7 +23,7 @@ template = {
         "Input": ["x"],
         "Forward": forward_list,
         "Output": [output_id],
-        "Function": ["my_model"]
+        "Function": ["Model"]
     }
 }
 

@@ -1,1 +1,1 @@
-from .tensor import Reshape, Transpose, Permute, Squeeze, SqueezeAll, UnSqueeze
+from .tensor import Reshape, Transpose, Permute, Squeeze, SqueezeAll, UnSqueeze, Flatten
